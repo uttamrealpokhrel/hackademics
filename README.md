@@ -81,7 +81,7 @@ Plus unlimited custom topics!
 
 ## 👥 About
 
-Developed by **BSCHIT Students** at **AIMS College**, Kathmandu
+Developed by **BScCSIT Students** at **AIMS College**, Kathmandu
 
 © 2026 Hackademics Team - All rights reserved
 
