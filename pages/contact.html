@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - InfiniteQuiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎯 InfiniteQuiz</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="#subscribe" class="nav-link">Follow Us</a></li>
+                <li><a href="#signin" class="nav-link">Sign In</a></li>
+                <li><a href="#signup" class="nav-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="topic-selection" style="max-width: 900px; margin: 0 auto;">
+            <h1 style="text-align: center; margin-bottom: 2rem; color: #6366f1;">Contact Us</h1>
+
+            <section style="margin-bottom: 2rem;">
+                <h2 style="color: #6366f1;">Get in Touch</h2>
+                <p>Have questions, feedback, or suggestions? We'd love to hear from you! Our team is always ready to help and listen to your ideas for improving InfiniteQuiz.</p>
+            </section>
+
+            <!-- Contact Form -->
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;">
+                <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Name:</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; transition: all 0.3s;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Email:</label>
+                        <input type="email" name="email" required style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; transition: all 0.3s;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Subject:</label>
+                        <input type="text" name="subject" required style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; transition: all 0.3s;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Message:</label>
+                        <textarea name="message" rows="6" required style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: all 0.3s;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <section style="background: #f8fafc; padding: 2rem; border-radius: 10px;">
+                <h2 style="color: #6366f1; margin-bottom: 1.5rem;">Other Ways to Connect</h2>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">📧 Email</h3>
+                    <p><a href="mailto:hello@infinitequiz.com" style="color: #6366f1; text-decoration: none;">hello@infinitequiz.com</a></p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">🏫 AIMS College</h3>
+                    <p>Developed by BSCHIT Students<br>
+                    AIMS College, Kathmandu, Nepal</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">🌐 Follow Us On Social Media</h3>
+                    <p>
+                        <a href="#" style="color: #6366f1; text-decoration: none; margin-right: 1rem;">Facebook</a>
+                        <a href="#" style="color: #6366f1; text-decoration: none; margin-right: 1rem;">Twitter</a>
+                        <a href="#" style="color: #6366f1; text-decoration: none; margin-right: 1rem;">Instagram</a>
+                        <a href="#" style="color: #6366f1; text-decoration: none;">LinkedIn</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">💬 Live Chat</h3>
+                    <p>Available Monday - Friday, 9 AM - 5 PM (UTC)</p>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="../index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>InfiniteQuiz is powered by <strong>Hackademics</strong></p>
+                <p>Developed by <strong>BSCHIT Students</strong></p>
+                <p>🎓 <strong>AIMS College</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hackademics Team | BSCHIT Students | AIMS College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const subject = document.querySelector('input[name="subject"]').value;
+            const message = document.querySelector('input[name="message"]').value;
+            
+            // Store the message (in production, this would send to a backend)
+            console.log({name, email, subject, message});
+            
+            alert(`Thank you for your message, ${name}! We'll get back to you shortly.`);
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>

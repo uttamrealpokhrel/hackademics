@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - InfiniteQuiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎯 InfiniteQuiz</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#subscribe" class="nav-link">Follow Us</a></li>
+                <li><a href="#signin" class="nav-link">Sign In</a></li>
+                <li><a href="#signup" class="nav-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="topic-selection" style="max-width: 900px; margin: 0 auto;">
+            <h1 style="text-align: center; margin-bottom: 2rem; color: #6366f1;">We'd Love Your Feedback!</h1>
+
+            <section style="margin-bottom: 2rem;">
+                <p style="text-align: center; color: #64748b;">Your feedback helps us improve InfiniteQuiz. Tell us what you think about our features, quiz quality, and overall experience.</p>
+            </section>
+
+            <!-- Feedback Form -->
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;">
+                <form id="feedbackForm" onsubmit="handleFeedbackSubmit(event)">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Your Name:</label>
+                        <input type="text" name="name" style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Email:</label>
+                        <input type="email" name="email" style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Feedback Type:</label>
+                        <select name="feedbackType" style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem;">
+                            <option value="">-- Select Type --</option>
+                            <option value="suggestion">Suggestion/Feature Request</option>
+                            
+                            <option value="improvement">Improvement</option>
+                            <option value="general">General Feedback</option>
+                            <option value="quiz-quality">Quiz Quality</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Rating:</label>
+                        <div style="display: flex; gap: 1rem;">
+                            <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐ Excellent</label>
+                            <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐ Good</label>
+                            <label><input type="radio" name="rating" value="3"> ⭐⭐⭐ Average</label>
+                            <label><input type="radio" name="rating" value="2"> ⭐⭐ Poor</label>
+                            <label><input type="radio" name="rating" value="1"> ⭐ Very Poor</label>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b;">Your Feedback:</label>
+                        <textarea name="feedback" rows="6" required placeholder="Please share your thoughts, suggestions, or report any issues..." style="width: 100%; padding: 0.8rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: inherit;"></textarea>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label>
+                            <input type="checkbox" name="followUp" value="yes">
+                            <span>I'd like you to follow up on my feedback</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Feedback</button>
+                </form>
+            </div>
+
+            <!-- Feedback Categories -->
+            <section style="background: #f8fafc; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+                <h2 style="color: #6366f1; margin-bottom: 1.5rem;">Common Feedback Categories</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #6366f1;">
+                        <h3 style="color: #1e293b; margin-bottom: 0.5rem;">💡 Suggestions</h3>
+                        <p style="color: #64748b; font-size: 0.9rem;">Share your ideas for new features or improvements</p>
+                    </div>
+
+                    
+
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #10b981;">
+                        <h3 style="color: #1e293b; margin-bottom: 0.5rem;">✨ Quality Feedback</h3>
+                        <p style="color: #64748b; font-size: 0.9rem;">Tell us about quiz quality and difficulty level</p>
+                    </div>
+
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                        <h3 style="color: #1e293b; margin-bottom: 0.5rem;">😊 General Comments</h3>
+                        <p style="color: #64748b; font-size: 0.9rem;">Share your overall experience and thoughts</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section style="margin-bottom: 2rem;">
+                <h2 style="color: #6366f1; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #6366f1;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">How will you use my feedback?</h3>
+                    <p style="color: #64748b;">We carefully review all feedback and use it to prioritize improvements and develop new features. Your insights directly shape the future of InfiniteQuiz!</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #ec4899;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Will I receive a response?</h3>
+                    <p style="color: #64748b;">If you check the "follow up" box and provide your email, we'll get back to you within 48 hours. For general feedback or suggestions, please use our contact form for more urgent matters.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #10b981;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Is my feedback private?</h3>
+                    <p style="color: #64748b;">Yes, your feedback is confidential and will only be reviewed by our development team. Please check our Privacy Policy for more details.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Can I report a bug here?</h3>
+                    <p style="color: #64748b;">Absolutely! Select "Bug Report" as your feedback type and provide as many details as possible about the issue. Screenshots are helpful too!</p>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="../index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>InfiniteQuiz is powered by <strong>Hackademics</strong></p>
+                <p>Developed by <strong>BSCHIT Students</strong></p>
+                <p>🎓 <strong>AIMS College</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hackademics Team | BSCHIT Students | AIMS College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleFeedbackSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.querySelector('input[name="name"]').value || 'Anonymous';
+            const email = document.querySelector('input[name="email"]').value || 'Not provided';
+            const feedbackType = document.querySelector('select[name="feedbackType"]').value;
+            const rating = document.querySelector('input[name="rating"]:checked')?.value || 'Not rated';
+            const feedback = document.querySelector('textarea[name="feedback"]').value;
+            const followUp = document.querySelector('input[name="followUp"]').checked;
+            
+            // simple validation: require a type before submitting
+            if (!feedbackType) {
+                alert('Please select a feedback type.');
+                return;
+            }
+
+            // Store the feedback (in production, this would send to a backend)
+            console.log({name, email, feedbackType, rating, feedback, followUp});
+            
+            alert(`Thank you for your feedback! We appreciate your input and will use it to improve InfiniteQuiz.`);
+            document.getElementById('feedbackForm').reset();
+        }
+    </script>
+</body>
+</html>

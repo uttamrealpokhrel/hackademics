@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Quiz Generator - Hackademics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎯 InfiniteQuiz</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#subscribe" class="nav-link">Follow Us</a></li>
+                <li><a href="#signin" class="nav-link" onclick="handleSignIn()">Sign In</a></li>
+                <li><a href="#signup" class="nav-link" onclick="handleSignUp()">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Home Page -->
+        <div id="homePage" class="page active">
+            <section class="hero">
+                <h1>Welcome to InfiniteQuiz Generator</h1>
+                <p>Create unlimited multiple-choice quizzes on any topic you want!</p>
+            </section>
+
+            <!-- Topic Selection -->
+            <section class="topic-selection">
+                <h2>Select a Topic or Enter Your Own</h2>
+                <div class="topic-grid" id="topicGrid">
+                    <!-- Topics will be dynamically loaded -->
+                </div>
+                
+                <div class="custom-topic-box">
+                    <h3>Or Create a Custom Quiz</h3>
+                    <input type="text" id="customTopic" placeholder="Enter any topic (e.g., Biology, Python Programming)" class="topic-input">
+                    <button onclick="startCustomQuiz()" class="btn btn-primary">Create Quiz</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quizPage" class="page">
+            <div class="quiz-container">
+                <!-- Progress Bar -->
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Question <span id="questionNumber">1</span>/10</span>
+                        <span>Score: <span id="scoreDisplay">0</span>/10</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <!-- Timer -->
+                <div class="timer-section">
+                    <div class="timer" id="timer">30</div>
+                    <p>Time remaining</p>
+                </div>
+
+                <!-- Question Display -->
+                <div class="question-section">
+                    <h2 id="questionText">Loading...</h2>
+                    <p id="topicName" class="topic-label">Topic</p>
+                </div>
+
+                <!-- Answer Options -->
+                <div class="options-section">
+                    <button class="option-btn" id="option1" onclick="selectAnswer(0)"></button>
+                    <button class="option-btn" id="option2" onclick="selectAnswer(1)"></button>
+                    <button class="option-btn" id="option3" onclick="selectAnswer(2)"></button>
+                    <button class="option-btn" id="option4" onclick="selectAnswer(3)"></button>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="quiz-actions">
+                    <button onclick="pauseQuiz()" class="btn btn-secondary">Pause</button>
+                    <button onclick="nextQuestion()" class="btn btn-primary" id="nextBtn" disabled>Next Question</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="resultsPage" class="page">
+            <div class="results-container">
+                <h1>Quiz Complete!</h1>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="finalScore">0</span>
+                        <span>/10</span>
+                    </div>
+                </div>
+                <p id="resultMessage" class="result-message"></p>
+                
+                <div class="results-details">
+                    <h3>Review Your Answers</h3>
+                    <div id="answersReview"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button onclick="retakeQuiz()" class="btn btn-primary">Retake Quiz</button>
+                    <button onclick="goHome()" class="btn btn-secondary">Back to Home</button>
+                    <button onclick="downloadResults()" class="btn btn-secondary">Download Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                    <li><a href="pages/feedback.html">Feedback</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>InfiniteQuiz is powered by <strong>Hackademics</strong></p>
+                <p>Developed by <strong>BScCSIT Students</strong></p>
+                <p>🎓 <strong>AIMS College</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hackademics Team | BScCSIT Students | AIMS College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

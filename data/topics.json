@@ -1,0 +1,156 @@
+{
+  "topics": [
+    {
+      "name": "Photosynthesis",
+      "emoji": "🌱",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Python Programming",
+      "emoji": "🐍",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "World History",
+      "emoji": "🌍",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Biology",
+      "emoji": "🧬",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Physics",
+      "emoji": "⚛️",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Mathematics",
+      "emoji": "📐",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Chemistry",
+      "emoji": "🧪",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "Geography",
+      "emoji": "🗺️",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Literature",
+      "emoji": "📚",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Science",
+      "emoji": "🔬",
+      "difficulty": "beginner"
+    },
+    {
+      "name": "Art History",
+      "emoji": "🎨",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Computer Science",
+      "emoji": "💻",
+      "difficulty": "advanced"
+    },
+    {
+      "name": "World Geography",
+      "emoji": "🌐",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Music Theory",
+      "emoji": "🎵",
+      "difficulty": "intermediate"
+    },
+    {
+      "name": "Economics",
+      "emoji": "💰",
+      "difficulty": "intermediate"
+    }
+  ],
+  "sampleQuizzes": {
+    "Photosynthesis": {
+      "topic": "Photosynthesis",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the primary purpose of photosynthesis?",
+          "options": ["To produce oxygen only", "To convert light energy into chemical energy (glucose)", "To absorb carbon dioxide", "To break down glucose for energy"],
+          "correctAnswer": 1,
+          "explanation": "Photosynthesis converts light energy into chemical energy stored in glucose, while also producing oxygen as a byproduct."
+        },
+        {
+          "id": 2,
+          "question": "In which organelle does photosynthesis occur?",
+          "options": ["Mitochondria", "Nucleus", "Chloroplast", "Ribosome"],
+          "correctAnswer": 2,
+          "explanation": "Photosynthesis occurs in the chloroplast, which contains chlorophyll and other necessary structures."
+        },
+        {
+          "id": 3,
+          "question": "What are the two main stages of photosynthesis?",
+          "options": ["Glycolysis and Krebs cycle", "Light-dependent reactions and light-independent reactions (Calvin cycle)", "Transcription and translation", "Fermentation and respiration"],
+          "correctAnswer": 1,
+          "explanation": "The light-dependent reactions occur in the thylakoid membrane and the Calvin cycle occurs in the stroma."
+        },
+        {
+          "id": 4,
+          "question": "Which pigment is primarily responsible for capturing light energy in plants?",
+          "options": ["Carotenoid", "Xanthophyll", "Chlorophyll", "Phycobilin"],
+          "correctAnswer": 2,
+          "explanation": "Chlorophyll (especially chlorophyll a and b) is the main photosynthetic pigment in plants."
+        },
+        {
+          "id": 5,
+          "question": "What is the equation for photosynthesis?",
+          "options": ["C6H12O6 + 6O2 → 6CO2 + 6H2O + energy", "6CO2 + 6H2O + light energy → C6H12O6 + 6O2", "6O2 + C6H12O6 → 6CO2 + 6H2O", "6CO2 + 6O2 → C6H12O6 + 6H2O"],
+          "correctAnswer": 1,
+          "explanation": "This is the balanced equation for photosynthesis: carbon dioxide and water, with light energy, produce glucose and oxygen."
+        },
+        {
+          "id": 6,
+          "question": "What is the primary product of the light-dependent reactions?",
+          "options": ["Glucose", "ATP and NADPH", "Carbon dioxide", "Pyruvate"],
+          "correctAnswer": 1,
+          "explanation": "Light-dependent reactions produce ATP and NADPH, which are used in the Calvin cycle to produce glucose."
+        },
+        {
+          "id": 7,
+          "question": "Where does the Calvin cycle take place in the chloroplast?",
+          "options": ["Thylakoid membrane", "In the stroma", "In the inner membrane", "On the outer membrane"],
+          "correctAnswer": 1,
+          "explanation": "The Calvin cycle (light-independent reactions) occurs in the stroma of the chloroplast."
+        },
+        {
+          "id": 8,
+          "question": "What is the role of ATP in photosynthesis?",
+          "options": ["It absorbs light energy", "It carries electrons", "It provides energy for the Calvin cycle", "It produces glucose"],
+          "correctAnswer": 2,
+          "explanation": "ATP (adenosine triphosphate) provides the necessary energy for the Calvin cycle to produce glucose."
+        },
+        {
+          "id": 9,
+          "question": "How many carbon atoms are fixed in each turn of the Calvin cycle?",
+          "options": ["3 carbon atoms", "6 carbon atoms", "1 carbon atom", "12 carbon atoms"],
+          "correctAnswer": 2,
+          "explanation": "In each turn of the Calvin cycle, 1 carbon atom from CO2 is fixed to form new organic molecules."
+        },
+        {
+          "id": 10,
+          "question": "What is the significance of the light-independent reactions?",
+          "options": ["They produce ATP and NADPH", "They split water molecules", "They convert CO2 into glucose using ATP and NADPH from light-dependent reactions", "They produce oxygen gas"],
+          "correctAnswer": 2,
+          "explanation": "The light-independent reactions (Calvin cycle) use the ATP and NADPH from light reactions to convert CO2 into glucose."
+        }
+      ]
+    }
+  }
+}
