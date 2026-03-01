@@ -81,8 +81,6 @@ Plus unlimited custom topics!
 
 ## 👥 About
 
-Developed by **BScCSIT Students** at **AIMS College**, Kathmandu
+Developed by **BScCSIT Students** at **AIMS College**, Nepal
 
-© 2026 Hackademics Team - All rights reserved
-
-**Happy Learning! 🎉**
+© 2026 Hackademics Team - All rights reserved. - By Uttam Pokhrel
